@@ -1,9 +1,28 @@
 plugins {
   id("java")
+  id("maven-publish")
 }
 
 group = "de.lukasbreuer"
 version = "1.0.0-SNAPSHOT"
+
+publishing {
+  publications {
+    create<MavenPublication>("library") {
+      from(components["java"])
+    }
+  }
+  repositories {
+    maven {
+      name = "GitHubPackages"
+      url = uri("https://maven.pkg.github.com/breuerlukas/cassandra-orm")
+      credentials {
+        username = (project.findProperty("gpr.user") ?: System.getenv("GITHUB_USERNAME")) as String?
+        password = (project.findProperty("gpr.token") ?: System.getenv("GITHUB_TOKEN")) as String?
+      }
+    }
+  }
+}
 
 repositories {
   mavenCentral()
