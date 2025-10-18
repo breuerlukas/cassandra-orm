@@ -3,8 +3,8 @@ package de.lukasbreuer.cassandra.orm.skeleton;
 import com.datastax.oss.driver.api.core.metadata.schema.ViewMetadata;
 import de.lukasbreuer.cassandra.orm.DatabaseColumn;
 import de.lukasbreuer.cassandra.orm.DatabaseTable;
-import de.lukasbreuer.cassandra.orm.iterator.AsyncIterator;
 import com.google.common.collect.Lists;
+import de.lukasbreuer.iteron.AsyncIterator;
 
 import java.util.List;
 import java.util.concurrent.CompletableFuture;

@@ -9,7 +9,6 @@ import de.lukasbreuer.cassandra.orm.condition.DatabaseCondition;
 import de.lukasbreuer.cassandra.orm.paging.DatabaseDirection;
 import de.lukasbreuer.cassandra.orm.paging.DatabaseOrder;
 import de.lukasbreuer.cassandra.orm.paging.DatabasePage;
-import de.lukasbreuer.cassandra.orm.iterator.AsyncIterator;
 import com.google.common.collect.Lists;
 
 import java.util.Collections;

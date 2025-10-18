@@ -3,7 +3,6 @@ package de.lukasbreuer.cassandra.orm.skeleton;
 import de.lukasbreuer.cassandra.orm.DatabaseColumn;
 import de.lukasbreuer.cassandra.orm.DatabaseRow;
 import de.lukasbreuer.cassandra.orm.condition.DatabaseCondition;
-import de.lukasbreuer.cassandra.orm.iterator.AsyncIterator;
 
 import java.util.List;
 import java.util.Optional;
