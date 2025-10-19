@@ -12,7 +12,13 @@ This project is my own implementation of an ORM for the Cassandra database for t
 
 ```
 repositories {
-  maven("https://maven.pkg.github.com/breuerlukas/cassandra-orm")
+  maven {
+    url = uri("https://maven.pkg.github.com/breuerlukas/cassandra-orm")
+    credentials {
+      username = project.findProperty("gpr.user")?.toString() ?: System.getenv("GITHUB_USERNAME")
+      password = project.findProperty("gpr.token")?.toString() ?: System.getenv("GITHUB_TOKEN")
+    }
+  }
 }
 
 dependencies {
