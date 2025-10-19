@@ -26,7 +26,13 @@ publishing {
 
 repositories {
   mavenCentral()
-  maven("https://maven.pkg.github.com/breuerlukas/iteron")
+  maven {
+    url = uri("https://maven.pkg.github.com/breuerlukas/iteron")
+    credentials {
+      username = project.findProperty("gpr.user")?.toString() ?: System.getenv("GITHUB_USERNAME")
+      password = project.findProperty("gpr.token")?.toString() ?: System.getenv("GITHUB_TOKEN")
+    }
+  }
 }
 
 dependencies {
