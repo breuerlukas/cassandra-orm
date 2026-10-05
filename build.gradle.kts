@@ -42,7 +42,7 @@ dependencies {
 
   implementation("com.google.inject:guice:7.0.0")
 
-  implementation("com.google.guava:guava:33.7.1-jre")
+  implementation("com.google.guava:guava:33.7.2-jre")
 
   implementation("org.projectlombok:lombok:1.18.48")
   annotationProcessor("org.projectlombok:lombok:1.18.48")
