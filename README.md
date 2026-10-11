@@ -22,7 +22,7 @@ repositories {
 }
 
 dependencies {
-  implementation("de.lukasbreuer:cassandra-orm:1.0.0-SNAPSHOT")
+  implementation("de.lukasbreuer:cassandra-orm:1.0.0")
 }
 ```
 

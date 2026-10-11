@@ -4,7 +4,7 @@ plugins {
 }
 
 group = "de.lukasbreuer"
-version = "1.0.0-SNAPSHOT"
+version = "1.0.0"
 
 publishing {
   publications {
@@ -54,7 +54,7 @@ dependencies {
   implementation("org.json:json:20260814")
   implementation("commons-io:commons-io:2.22.0")
 
-  implementation("de.lukasbreuer:iteron:1.0.0-SNAPSHOT")
+  implementation("de.lukasbreuer:iteron:1.0.0")
 }
 
 tasks.test {
